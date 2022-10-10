@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/PortFolio.css" />
+    <title>Finterest-PortFolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/Favicon.png" size="250x250" type="image/png">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-evenly">
+          <div class="col-lg-4" id="regImg">
+            <div class="imgwrap">
+                <img
+                  src="images/Registration.jpg"
+                  class="img img-fluid"
+                  alt="Registration"
+                />
+              </div>
+          </div>
+        <div
+          class="col-lg-6  text-center p-0 mt-3 mb-2"
+        >
+          <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+            <h2 id="heading">Registration Form</h2>
+            <p>Fill all form field to go to next step</p>
+
+            <form id="msform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdgxGpDHtg5vvJ0f6V9g1eHutyfB4Q3sT-L5RHz7qS5XwY58w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true" class="myform">
+              <!-- progressbar -->
+              <ul id="progressbar">
+                <li class="active" id="personal"><strong>Personal</strong></li>
+                <li id="address"><strong>Address</strong></li>
+                <li id="account"><strong>Account</strong></li>
+                <!-- <li id="payment"><strong>Image</strong></li> -->
+                <li id="confirm"><strong>Finish</strong></li>
+              </ul>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated"
+                  role="progressbar"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <br />
+              <!-- fieldsets -->
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Personal Information :</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 1 - 5</h2>
+                    </div>
+                  </div>
+                  <div class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                      <label
+                        class="fieldlabels form-label"
+                        >First Name : *</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.501344842"
+                        placeholder="First Name"
+                        class="form-control"
+                        id="fname"
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        class="fieldlabels form-label"
+                        >Last Name : *</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1123457584"
+                        placeholder="Last Name"
+                        class="form-control"
+                        id="lname"
+                        required
+                      />
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="col-md-8">
+                      <label
+                        class="fieldlabels form-label"
+                        >Aadhar UID Number : *</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.409337893"
+                        placeholder="Aadhar UID Number"
+                        class="form-control"
+                        id="aadhar"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-4">
+                      <label
+                        class="fieldlabels form-label"
+                        >Age : *</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.932491437"
+                        placeholder="Age"
+                        class="form-control"
+                        id="age"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!-- <label class="fieldlabels">First Name : *</label>
+                  <input type="text" name="fname" placeholder="First Name" />
+                  <label class="fieldlabels">Last Name : *</label>
+                  <input type="text" name="lname" placeholder="Last Name" /> -->
+                  <!-- <label class="fieldlabels">Age : *</label>
+                  <input type="text" name="age" placeholder="Age" /> -->
+                  <label class="fieldlabels">Contact No. : *</label>
+                  <input type="text" name="phno" placeholder="Contact No." id="phno"/>
+                  <label class="fieldlabels">Alternate Contact No. : </label>
+                  <input
+                    type="text"
+                    name="phno_2"
+                    placeholder="Alternate Contact No."
+                    id="phno_2"
+                  />
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Next"
+                  onclick="PersonalInfo()";
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Address Information :</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 2 - 5</h2>
+                    </div>
+                  </div>
+                  <div class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                      <label
+                        class="fieldlabels form-label"
+                        >Country : *</label
+                      >
+                      <input
+                        type="text"
+                        name="Country"
+                        placeholder="Country"
+                        class="form-control"
+                        id="country"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid Country.
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        class="fieldlabels form-label"
+                        >State</label
+                      >
+                      <select
+                        class="form-select"
+                        id="state"
+                        required
+                      >
+                        <option selected disabled value="">Choose...</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Arunachal Pradesh</option>
+                        <option>Assam</option>
+                        <option>Bihar</option>
+                        <option>Chhattisgarh</option>
+                        <option>Goa</option>
+                        <option>Gujarat</option>
+                        <option>Haryana</option>
+                        <option>Himachal Pradesh</option>
+                        <option>Jharkhand</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Madhya Pradesh</option>
+                        <option>Maharashtra</option>
+                        <option>Manipur</option>
+                        <option>Meghalaya</option>
+                        <option>Mizoram</option>
+                        <option>Nagaland</option>
+                        <option>Odisha</option>
+                        <option>Punjab</option>
+                        <option>Rajasthan</option>
+                        <option>Sikkim</option>
+                        <option>Tamil Nadu</option>
+                        <option>Telangana</option>
+                        <option>Tripura</option>
+                        <option>Uttar Pradesh</option>
+                        <option>Uttarakhand</option>
+                        <option>West Bengal</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label
+                        class="fieldlabels form-label"
+                        >City : *</label
+                      >
+                      <input
+                        type="text"
+                        name="City"
+                        placeholder="City"
+                        class="form-control"
+                        id="city"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label
+                        class="fieldlabels form-label"
+                        >Pincode : *</label
+                      >
+                      <input
+                        type="text"
+                        name="Pincode"
+                        placeholder="Pincode"
+                        class="form-control"
+                        id="pincode"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid Pincode.
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label
+                        class="fieldlabels form-label"
+                        >Address Line 1 : *</label
+                      >
+                      <input
+                        type="text"
+                        name="Address Line 1"
+                        placeholder="Address"
+                        class="form-control"
+                        id="address1"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid Address.
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <label
+                        class="fieldlabels form-label"
+                        >Address Line 2 : *</label
+                      >
+                      <input
+                        type="text"
+                        name="Address Line 2"
+                        placeholder="Address"
+                        class="form-control"
+                        id="address2"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid Address.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Next"
+                  onclick="AddressInfo()"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Account Information:</h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 3 - 5</h2>
+                    </div>
+                  </div>
+                  <label class="fieldlabels">Email: *</label>
+                  <input type="email" name="entry.719742136" placeholder="Email Id" id="email"/>
+                  <label class="fieldlabels">Username: *</label>
+                  <input type="text" name="uname" placeholder="UserName" id="username"/>
+                  <label class="fieldlabels">Password: *</label>
+                  <input type="password" name="pwd" placeholder="Password" id="password"/>
+                  <label class="fieldlabels">Confirm Password: *</label>
+                  <input
+                    type="password"
+                    name="cpwd"
+                    placeholder="Confirm Password"
+                    id="cpassword"
+                  />
+                </div>
+                <input
+                  type="button"
+                  name="next"
+                  class="next action-button"
+                  value="Next"
+                  onclick="AccountInfo()"
+                />
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Inputs : </h2>
+                      <p>All Inputs are Monthly estimates</p>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 4 - 5</h2>
+                    </div>
+                  </div>
+                  <div class="row justify-content-evenly">
+                      <div class="col-md-6">
+                        <label
+                        class="fieldlabels form-label"
+                        >Salary : *</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.758022482"
+                        placeholder="Salary"
+                        id="salary"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                      <div class="col-md-6">
+                        <label
+                        class="fieldlabels form-label"
+                        >Bonuses : (if any)</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1466821"
+                        placeholder="Bonuses"
+                        id="bonuses"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+
+                      <div class="col-md-6">
+                        <label
+                        class="fieldlabels form-label"
+                        >Real estate returns : *</label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1118509187"
+                        placeholder="Real estate returns"
+                        id="real_estate_returns"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                      <div class="col-md-6">
+                        <label
+                        class="fieldlabels form-label"
+                        >Gold & other valuables : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1651382770"
+                        placeholder="Gold & other valuables"
+                        id="gold"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                      <div class="col-md-6">
+                        <label
+                        class="fieldlabels form-label"
+                        >FD Interest : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.171490914"
+                        placeholder="FD Interest"
+                        id="FDinterest"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                    <div class="col-12">
+                        <h2 class="fs-title">Monthly Expenditure : </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <label
+                        class="fieldlabels form-label"
+                        >Household expenses : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1975866669"
+                        placeholder="Household expenses"
+                        id="household"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                    <div class="col-md-4">
+                        <label
+                        class="fieldlabels form-label"
+                        >Utilities : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.567721596"
+                        placeholder="Utilities"
+                        id="utilities"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                    <div class="col-md-4">
+                        <label
+                        class="fieldlabels form-label"
+                        >Rent/EMI (if any) : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1095438560"
+                        placeholder="Rent/EMI"
+                        id="rent"
+                        class="form-control"
+                        required
+                      />
+                        </div>
+                    <div class="col-md-4">
+                        <label
+                        class="fieldlabels form-label"
+                        >Insurance Payments <br>(if any) : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1087744107"
+                        placeholder="Insurance Payments"
+                        class="form-control"
+                        id="insurance"
+                        required
+                      />
+                        </div>
+                    <div class="col-md-4">
+                        <label
+                        class="fieldlabels form-label"
+                        >Medical expenses <br>(if any) : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.1061872954"
+                        placeholder="Medical expenses"
+                        class="form-control"
+                        id="medical"
+                        required
+                      />
+                        </div>
+                    <div class="col-md-4">
+                        <label
+                        class="fieldlabels form-label"
+                        >Miscellaneous <br>(if any) : </label
+                      >
+                      <input
+                        type="text"
+                        name="entry.978017014"
+                        placeholder="Miscellaneous"
+                        class="form-control"
+                        id="miscellaneous"
+                        required
+                      />
+                        </div>
+
+                  </div>
+                  <hr>
+                  <div class="col-md-12">
+                    <p>
+                      The risk profile indicates your preferences in every aspect of expenditure. It is expressed in the form of percentage values according to how much attention and priority you want to provide to achieve the following. Please fill in a set of 5 percentage preference values below:
+                    </p>
+                  </div>
+                  <div class="col-md-12">
+                    <label
+                    class="fieldlabels form-label"
+                    >Long term personal and professional goals : </label
+                  >
+                  <!-- Slider -->
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="25" class="slider" id="myRange1" name="entry.1835411872">
+                    <p>Value: <span id="demo1"></span>&percnt;</p>
+                  </div>
+
+                  <!-- <input
+                    type="text"
+                    name="a"
+                    id="a"
+                    placeholder="Long term personal and professional goals"
+                    class="form-control"
+                    required
+                  /> -->
+                    </div>
+
+                  <div class="col-md-12">
+                    <label
+                    class="fieldlabels form-label"
+                    >Short term personal and professional goals : </label
+                  >
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="30" class="slider" id="myRange2" name="entry.1427035741">
+                    <p>Value: <span id="demo2"></span>&percnt;</p>
+                  </div>
+                  <!-- <input
+                    type="text"
+                    name="b"
+                    id="b"
+                    placeholder="Short term personal and professional goals"
+                    class="form-control"
+                    required
+                  /> -->
+                    </div>
+                  <div class="col-md-12">
+                    <label
+                    class="fieldlabels form-label"
+                    >Low-Risk Investment for continuous returns : </label
+                  >
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="20" class="slider" id="myRange3" name="entry.1887345492">
+                    <p>Value: <span id="demo3"></span>&percnt;</p>
+                  </div>
+                  <!-- <input
+                    type="text"
+                    name="c"
+                    id="c"
+                    placeholder="Low-Risk Investment for continuous returns"
+                    class="form-control"
+                    required
+                  /> -->
+                    </div>
+                  <div class="col-md-12">
+                    <label
+                    class="fieldlabels form-label"
+                    >Security Funds and Emergency : </label
+                  >
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="15" class="slider" id="myRange4" name="entry.1200656938">
+                    <p>Value: <span id="demo4"></span>&percnt;</p>
+                  </div>
+                  <!-- <input
+                    type="text"
+                    name="d"
+                    id="d"
+                    placeholder="Security Funds and Emergency"
+                    class="form-control"
+                    required
+                  /> -->
+                    </div>
+                  <div class="col-md-12">
+                    <label
+                    class="fieldlabels form-label"
+                    >Volatile Investments for short-term gains : </label
+                  >
+                  <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="10" class="slider" id="myRange5" name="entry.1712060056">
+                    <p>Value: <span id="demo5"></span>&percnt;</p>
+                  </div>
+                  <!-- <input
+                    type="text"
+                    name="e"
+                    id="e"
+                    placeholder="Volatile Investments for short-term gains"
+                    class="form-control"
+                    required
+                  /> -->
+                    </div>
+                  <div class="col-md-12">
+                    <label
+                    class="fieldlabels form-label"
+                    >Number of Years : </label>
+                    <div class="slidecontainer">
+                      <input type="range" min="1" max="20" value="1" class="slider" id="myRange6" name="entry.1113836991">
+                      <p>Value: <span id="demo6"></span> years</p>
+                    </div>
+                  </div>
+
+                </div>
+                <input
+                  type="submit"
+                  name="next"
+                  class="next action-button"
+                  value="Submit"
+                />
+                <!-- onclick="InputInfo()" -->
+                <input
+                  type="button"
+                  name="previous"
+                  class="previous action-button-previous"
+                  value="Previous"
+                />
+              </fieldset>
+              <fieldset>
+                <div class="form-card">
+                  <div class="row">
+                    <div class="col-7">
+                      <h2 class="fs-title">Finish : </h2>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="steps">Step 5 - 5</h2>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <h2 class="purple-text text-center">
+                    <strong>SUCCESS !</strong>
+                  </h2>
+                  <br />
+                  <div class="row justify-content-center">
+                    <div class="col-3">
+                      <img src="images/green tick.jpg" class="fit-image" />
+                    </div>
+                  </div>
+                  <br /><br />
+                  <div class="row justify-content-center">
+                    <div class="col-7 text-center">
+                      <h5 class="purple-text text-center">
+                        You Have Successfully Registered Up
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/PortFolio.js"></script>
+  </body>
+</html>
