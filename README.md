@@ -34,7 +34,7 @@ e) Low-Risk Investment for continuous returns
 
 II) Goal Planning
 
-Financial goal-planning refers to setting financial goals and developing plans to achieve them. The module implemented in the website takes into account a broad classification of goals based on their expected time frame into 3 categories:
+Financial goal-planning refers to setting financial goals and developing plans to achieve them. The module implemented in the website takes into account a broad classification of goals based on their expected time frame into 3 categories: <br>
 a) Short Term Goals <br>
 b) Medium Term Goals <br>
 c) Long Term Goals <br>
