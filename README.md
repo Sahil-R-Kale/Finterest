@@ -50,9 +50,9 @@ A Systematic Investment Plan (SIP) is an investment tool which allows the invest
 **Implementation Details and Technologies:**
 
 
-The Front-End is implemented using HTML to build the skeleton of website and CSS to beautify the pages and JS to make pages interactive and AJAX is used for Multi-Step form. With the help of the Mulit-Step Form only information details are fetched from the user for generating the report.
+The Front-End is implemented using HTML to build the skeleton of website and CSS to beautify the pages and JS to make pages interactive and AJAX is used for Multi-Step form. With the help of the Multi-Step Form, user information details are fetched stagewise for generating the report.
 
-The data fetched from the webpage is stored on the cloud for further processing and storage. This is achieved by interfacing the webpage with google sheets via a predefined google form. All the calculations required for generating the output values are performed automatically as each column has been defined with a specific formula. The report generated is customized for each client using a template report having placeholders. 
+The data fetched from the webpage is then stored on the cloud for further processing and storage. This is achieved by interfacing the webpage with google sheets via a predefined google form. All the calculations required for generating the output values are performed automatically as each column has been defined with a specific formula. The report generated is customized for each client using a template having placeholders. 
 
 Using the AppScript of the concerned google sheet, a function is written to populate the template report with values for the recently inserted record. The "Generate Pdf" button can thus be clicked which triggers the function defined in the AppScript to generate a personalised financial report. The report pdf is then mailed to the client.
 
