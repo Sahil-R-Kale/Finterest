@@ -42,7 +42,7 @@ c) Long Term Goals <br>
 ![Screenshot (1073)](https://user-images.githubusercontent.com/85440675/194929287-7adcec58-2843-48b5-bc17-422aa694b092.png)
 
 
-III) SIP Calculator
+III) SIP Calculator <br>
 A Systematic Investment Plan (SIP) is an investment tool which allows the investor to invest a fixed amount at regular intervals in a Mutual Fund scheme. SIP works by investing a fixed amount at a defined frequency.
 
 
