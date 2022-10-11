@@ -56,3 +56,4 @@ The data fetched from the webpage is stored on the cloud for further processing 
 
 Using the AppScript of the concerned google sheet, a function is written to populate the template report with values for the recently inserted record. The "Generate Pdf" button can thus be clicked which triggers the function defined in the AppScript to generate a personalised financial report. The report pdf is then mailed to the client.
 
+Check out "Sample_Report.pdf" for a definitive example!
